@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>bpm</title>
+    <title>BPM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       :root {
@@ -43,27 +43,36 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 72px;
+        margin-bottom: 32px;
       }
 
       .logo-img {
-        height: 44px; /* ajuste ici si besoin */
+        height: 72px; /* monte à 80px si ton PNG est clean */
         width: auto;
         display: block;
       }
 
       /* HERO */
       .hero {
+        flex-grow: 1;
+        width: 100%;
         text-align: center;
         max-width: 720px;
-        margin: 0 auto 80px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
 
       .hero-title {
-        font-size: 26px;
-        line-height: 1.3;
+        font-size: 28px;
+        line-height: 1.25;
         font-weight: 800;
         text-transform: uppercase;
+        max-width: 680px;
+        margin: 0 auto;
       }
 
       /* CTA */
@@ -79,7 +88,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 18px 40px;
+        padding: 20px 44px; /* plus “chunky” */
         min-width: 260px;
         border-radius: 999px;
         border: none;
@@ -101,7 +110,7 @@
         filter: brightness(1.05);
       }
 
-      /* FOOTER SOCIALS (optionnel) */
+      /* FOOTER SOCIALS */
       .footer {
         margin-top: auto;
         display: flex;
@@ -112,8 +121,8 @@
       }
 
       .social-link {
-        width: 26px;
-        height: 26px;
+        width: 36px;
+        height: 36px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -129,14 +138,15 @@
       }
 
       .social-link svg {
-        width: 22px;
-        height: 22px;
+        width: 28px;
+        height: 28px;
         fill: currentColor;
       }
 
+      /* RESPONSIVE */
       @media (min-width: 768px) {
         .hero-title {
-          font-size: 32px;
+          font-size: 34px;
         }
       }
     </style>
@@ -157,12 +167,12 @@
         </h1>
 
         <div class="cta-group">
-          <!-- Remplacera # par ton vrai lien -->
+          <!-- Remplace # par ton vrai lien -->
           <a href="#" class="cta">L'app qu'il te faut en 2026</a>
         </div>
       </main>
 
-      <!-- FOOTER (optionnel) -->
+      <!-- FOOTER -->
       <footer class="footer">
         <!-- Instagram -->
         <a
