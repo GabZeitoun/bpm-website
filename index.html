@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>BPM</title>
+    <title>bpm - Dating app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       :root {
@@ -167,6 +167,18 @@
         opacity: 1;
       }
 
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
       /* RESPONSIVE */
       @media (min-width: 768px) {
         .hero-title {
@@ -177,6 +189,7 @@
   </head>
 
   <body>
+    <span class="visually-hidden">bpm - Dating app</span>
     <div class="page">
       <!-- HEADER -->
       <header class="header">
@@ -230,11 +243,8 @@
         </div>
 
         <div class="legal">
-          <!-- 🔁 METTRE TON LIEN CGU ICI -->
-          <a href="https://bpm-app.notion.site/tos">CGU</a>
-
-          <!-- 🔁 METTRE TON LIEN POLITIQUE DE CONFIDENTIALITÉ ICI -->
-          <a href="https://bpm-app.notion.site/privacy">Politique de confidentialité</a>
+          <a href="tos.html">CGU</a>
+          <a href="privacy.html">Politique de confidentialite</a>
         </div>
       </footer>
     </div>
