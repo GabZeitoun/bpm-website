@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -21,8 +21,13 @@
         min-height: 100vh;
         background: var(--bg);
         color: var(--text);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-          Inter, sans-serif;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "SF Pro Text",
+          Inter,
+          sans-serif;
         display: flex;
         justify-content: center;
       }
@@ -62,7 +67,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-top: 18px;  /* ✅ réduit le “vide” au-dessus du titre */
+        padding-top: 18px; /* ✅ réduit le “vide” au-dessus du titre */
         padding-bottom: 18px;
       }
 
@@ -99,7 +104,9 @@
         background: var(--bpm-yellow);
         color: #000;
         box-shadow: 0 0 24px rgba(225, 255, 0, 0.4);
-        transition: transform 0.12s ease-out, box-shadow 0.12s ease-out,
+        transition:
+          transform 0.12s ease-out,
+          box-shadow 0.12s ease-out,
           filter 0.12s ease-out;
       }
 
@@ -120,6 +127,20 @@
         padding-top: 10px; /* ✅ moins d’espace entre bouton et footer */
       }
 
+      .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        width: 100%;
+      }
+
+      .app-name {
+        font-size: 14px;
+        opacity: 0.85;
+        font-weight: 500;
+      }
+
       .socials {
         display: flex;
         gap: 28px;
@@ -136,7 +157,9 @@
         text-decoration: none;
         color: var(--text);
         opacity: 0.85;
-        transition: opacity 0.12s ease-out, transform 0.12s ease-out;
+        transition:
+          opacity 0.12s ease-out,
+          transform 0.12s ease-out;
       }
 
       .social-link:hover {
@@ -189,7 +212,6 @@
   </head>
 
   <body>
-    <span class="visually-hidden">bpm - Dating app</span>
     <div class="page">
       <!-- HEADER -->
       <header class="header">
@@ -204,12 +226,17 @@
 
         <div class="cta-group">
           <!-- 🔁 METTRE TON LIEN CTA ICI -->
-          <a href="https://apps.apple.com/fr/app/bpm-rencontre-sport-dating/id6755629532" class="cta">L'app qu'il te faut en 2026</a>
+          <a
+            href="https://apps.apple.com/fr/app/bpm-rencontre-sport-dating/id6755629532"
+            class="cta"
+            >L'app qu'il te faut en 2026</a
+          >
         </div>
       </main>
 
       <!-- FOOTER -->
       <footer class="footer">
+        <span class="app-name">bpm - Dating app</span>
         <div class="socials">
           <!-- 🔁 METTRE TON LIEN INSTAGRAM ICI -->
           <a
