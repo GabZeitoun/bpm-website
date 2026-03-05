@@ -35,24 +35,24 @@
       .page {
         width: 100%;
         max-width: 960px;
-        padding: 32px 20px 28px; /* footer un peu plus “serré” */
+        padding: 32px 20px 28px;
         display: flex;
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
       }
 
-      /* HEADER (logo only) */
+      /* HEADER */
       .header {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 14px; /* ✅ moins d’espace entre header et hero */
+        margin-bottom: 14px;
       }
 
       .logo-img {
-        height: 200px; /* ajuste ici si tu veux plus gros */
+        height: 200px;
         width: auto;
         display: block;
       }
@@ -67,17 +67,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-top: 18px; /* ✅ réduit le “vide” au-dessus du titre */
+        padding-top: 18px;
         padding-bottom: 18px;
       }
 
       .hero-title {
-        font-size: 28px;
-        line-height: 1.25;
+        font-size: 42px;
+        line-height: 1.2;
         font-weight: 800;
-        text-transform: uppercase;
         max-width: 680px;
         margin: 0 auto;
+      }
+
+      .hero-title span {
+        color: var(--bpm-yellow);
       }
 
       /* CTA */
@@ -85,7 +88,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 56px; /* ✅ plus d’espace entre titre et bouton */
+        margin-top: 56px;
       }
 
       .cta {
@@ -98,8 +101,7 @@
         border: none;
         font-size: 14px;
         font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
+        letter-spacing: 0.04em;
         text-decoration: none;
         background: var(--bpm-yellow);
         color: #000;
@@ -123,8 +125,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10px; /* ✅ contrôle global des espacements du footer */
-        padding-top: 10px; /* ✅ moins d’espace entre bouton et footer */
+        gap: 10px;
+        padding-top: 10px;
       }
 
       .footer-row {
@@ -182,7 +184,7 @@
 
       .legal a {
         color: var(--text);
-        text-decoration: underline; /* ✅ souligné */
+        text-decoration: underline;
         text-underline-offset: 3px;
       }
 
@@ -202,10 +204,9 @@
         border: 0;
       }
 
-      /* RESPONSIVE */
       @media (min-width: 768px) {
         .hero-title {
-          font-size: 34px;
+          font-size: 52px;
         }
       }
     </style>
@@ -221,16 +222,12 @@
       <!-- HERO -->
       <main class="hero">
         <h1 class="hero-title">
-          LA SEULE COMMUNAUTÉ OÙ LES SPORTIFS CÉLIBS SE RENCONTRENT
+          Tu es sur notre <span>ancien site</span> !<br />
+          Viens voir le nouveau&nbsp;:))
         </h1>
 
         <div class="cta-group">
-          <!-- 🔁 METTRE TON LIEN CTA ICI -->
-          <a
-            href="https://apps.apple.com/fr/app/bpm-rencontre-sport-dating/id6755629532"
-            class="cta"
-            >L'app qu'il te faut en 2026</a
-          >
+          <a href="https://bpmrunklub.com" class="cta">Aller sur le nouveau site</a>
         </div>
       </main>
 
@@ -238,7 +235,6 @@
       <footer class="footer">
         <span class="app-name">bpm - Dating app</span>
         <div class="socials">
-          <!-- 🔁 METTRE TON LIEN INSTAGRAM ICI -->
           <a
             href="https://www.instagram.com/bpm.appp/"
             target="_blank"
@@ -253,7 +249,6 @@
             </svg>
           </a>
 
-          <!-- 🔁 METTRE TON LIEN TIKTOK ICI -->
           <a
             href="https://www.tiktok.com/@bpm.app"
             target="_blank"
